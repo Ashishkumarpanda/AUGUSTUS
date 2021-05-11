@@ -16,10 +16,10 @@ def homeform():
       shortness_of_breath = request.form['shortness_of_breath']
       headache = request.form['headache']
       test_indication = request.form['test_indication']
-      
+      print(fname,cough,fever,sore_throat,shortness_of_breath,headache,test_indication)
       result = "Positive"
 
-      return render_template('index.html',result=result)
+      return render_template('index.html',result=result,name=fname)
     
 if __name__ == '__main__':
     app.run(debug = True)

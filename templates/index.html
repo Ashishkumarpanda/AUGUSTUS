@@ -25,6 +25,8 @@
       </div>
             {% if result=="Positive" %}
             <div class="jumbotron result text-center" style="background:#000;color:white;">
+                <h1 class="display-6">Hi {{ name }} ,</h1>
+                <hr class="my-4" style="background-color: white;">
                 <h1 class="display-1">You <strong>might be </strong><span style="color:red">Positive</span></h1>
 
                 <br><p>We suggest you to take necessary steps and take Covid-19 test at your nearest hospital.</p>
@@ -32,6 +34,8 @@
                 </div>
             {% elif result=="Negative" %}
             <div class="jumbotron result text-center" style="background:#000;color:white;">
+                <h1 class="display-6">Hi {{ name }} ,</h1>
+                <hr class="my-4" style="background-color: white;">
                 <h1 class="display-1">You might be <span style="color:green">Negative</span> </h1>
 
                 <br><p>We suggest you to take necessary steps and stay at home and take good care of your health.</p>
