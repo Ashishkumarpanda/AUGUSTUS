@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Augustus</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">	<link rel="stylesheet" type="text/css" href="./resources/plugins/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./resources/plugins/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <link rel="icon" href="https://cdn.dribbble.com/users/568602/screenshots/4762662/augustusdribbble.png?compress=1&resize=400x300">
+</head>
+<body>
+    <div class="jumbotron" style="height: auto;background:url(https://www.constructionexec.com/assets/site_18/images/article/050620030611.jpg?width=1280);background-size:cover;color:white;background-attachment:fixed;padding-bottom:0;margin-bottom:0;">
+        <div class="row">
+            <div class="col-md-7"><br>
+                <h1 class="display-2">Welcome to Augustus!</h1>
+                <p>for calling extra attention to featured content or information.</p>
+                <br><hr class="my-4">
+                <br><p >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p>
+                <br><p class="lead">
+                    <br><a class="btn btn-light btn-lg" href="#" role="button">Check Now</a><br><br><br>
+                </p>
+            </div>
+        </div>
+      </div>
+            {% if result=="Positive" %}
+            <div class="jumbotron result text-center" style="background:#000;color:white;">
+                <h1 class="display-6">Hi {{ name }} ,</h1>
+                <hr class="my-4" style="background-color: white;">
+                <h1 class="display-1">You <strong>might be </strong><span style="color:red">Positive</span></h1>
+
+                <br><p>We suggest you to take necessary steps and take Covid-19 test at your nearest hospital.</p>
+
+                </div>
+            {% elif result=="Negative" %}
+            <div class="jumbotron result text-center" style="background:#000;color:white;">
+                <h1 class="display-6">Hi {{ name }} ,</h1>
+                <hr class="my-4" style="background-color: white;">
+                <h1 class="display-1">You might be <span style="color:green">Negative</span> </h1>
+
+                <br><p>We suggest you to take necessary steps and stay at home and take good care of your health.</p>
+
+                </div>
+            {% endif %}
+      
+
+
+
+
+    <div class="form-section text-center" style="height: auto;background:url(https://i.pinimg.com/originals/9e/74/7d/9e747dd76f1be3d062748e6b3d030f6b.jpg);background-size:cover;">
+    <br>
+    <h1 class="display-4">Fill out the details!</h1>
+    <p>for calling extra attention to featured content or information.</p><br><br>
+    <div class="row justify-content-md-center text-center">
+        <div class="col-md-6">
+            <form method="POST" action="">
+                <div class="form-group">
+
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Full Name</label>
+                  <input type="text" class="form-control" id="exampleInputPassword1" name="fname" placeholder="Full Name" required>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="cough">Are you having <strong>Cough</strong> ? </label>
+                    <div class="row frb-group">
+                        <div class="col-md-6 ">
+                            <div class="frb frb-success">
+                                <input type="radio" id="radio-button-1" name="cough" value="1" required>
+                                <label for="radio-button-1">
+                                    <span class="frb-title">Yes</span>
+                                    <span class="frb-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper quam nunc.</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="frb frb-danger">
+                                <input type="radio" id="radio-button-2" name="cough" value="0" required>
+                                <label for="radio-button-2">
+                                    <span class="frb-title">No</span>
+                                    <span class="frb-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper quam nunc.</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div><br>
+                <div class="form-group">
+                    <label for="fever">Are you having <strong>Fever</strong> ? </label>
+                    <div class="row frb-group">
+                        <div class="col-md-6 ">
+                            <div class="frb frb-success">
+                                <input type="radio" id="radio-button-3" name="fever" value="1" required>
+                                <label for="radio-button-3">
+                                    <span class="frb-title">Yes</span>
+                                    <span class="frb-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper quam nunc.</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="frb frb-danger">
+                                <input type="radio" id="radio-button-4" name="fever" value="0" required>
+                                <label for="radio-button-4">
+                                    <span class="frb-title">No</span>
+                                    <span class="frb-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper quam nunc.</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div><br>
+                <div class="form-group">
+                    <label for="sore_throat">Are you having <strong>Sore Throat</strong> ? </label>
+                    <div class="row frb-group">
+                        <div class="col-md-6 ">
+                            <div class="frb frb-success">
+                                <input type="radio" id="radio-button-5" name="sore_throat" value="1" required>
+                                <label for="radio-button-5">
+                                    <span class="frb-title">Yes</span>
+                                    <span class="frb-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper quam nunc.</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="frb frb-danger">
+                                <input type="radio" id="radio-button-6" name="sore_throat" value="0" required>
+                                <label for="radio-button-6">
+                                    <span class="frb-title">No</span>
+                                    <span class="frb-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper quam nunc.</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div><br>
+                <div class="form-group">
+                    <label for="shortness_of_breath">Are you feeling <strong>Shortness in Breath</strong> ? </label>
+                    <div class="row frb-group">
+                        <div class="col-md-6 ">
+                            <div class="frb frb-success">
+                                <input type="radio" id="radio-button-7" name="shortness_of_breath" value="1" required>
+                                <label for="radio-button-7">
+                                    <span class="frb-title">Yes</span>
+                                    <span class="frb-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper quam nunc.</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="frb frb-danger">
+                                <input type="radio" id="radio-button-8" name="shortness_of_breath" value="0" required>
+                                <label for="radio-button-8">
+                                    <span class="frb-title">No</span>
+                                    <span class="frb-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper quam nunc.</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div><br>
+                <div class="form-group">
+                    <label for="headache">Are you having <strong>Headache</strong> ? </label>
+                    <div class="row frb-group">
+                        <div class="col-md-6 ">
+                            <div class="frb frb-success">
+                                <input type="radio" id="radio-button-9" name="headache" value="1" required>
+                                <label for="radio-button-9">
+                                    <span class="frb-title">Yes</span>
+                                    <span class="frb-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper quam nunc.</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="frb frb-danger">
+                                <input type="radio" id="radio-button-10" name="headache" value="0" required>
+                                <label for="radio-button-10">
+                                    <span class="frb-title">No</span>
+                                    <span class="frb-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper quam nunc.</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div><br>
+                <div class="form-group">
+                    <label for="test_indication">Your <strong>Travel History</strong> ? </label>
+                    <div class="row frb-group">
+                        <div class="col-md-4 ">
+                            <div class="frb frb-warning">
+                                <input type="radio" id="radio-button-11" name="test_indication" value="0"required >
+                                <label for="radio-button-11">
+                                    <span class="frb-title">Abroad</span>
+                                    <span class="frb-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper quam nunc.</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="frb frb-warning">
+                                <input type="radio" id="radio-button-12" name="test_indication" value="1" required>
+                                <label for="radio-button-12">
+                                    <span class="frb-title">Contact with Confirmed</span>
+                                    <span class="frb-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper quam nunc.</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="frb frb-warning">
+                                <input type="radio" id="radio-button-13" name="test_indication" value="2" required>
+                                <label for="radio-button-13">
+                                    <span class="frb-title">Other</span>
+                                    <span class="frb-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper quam nunc.</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div><br><br><br>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                    <label class="form-check-label" for="exampleCheck1">I hereby declare that given data about me are genuine and correct.</label>
+                  </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+    </div>
+    <br><br><br><br>
+</div>
+
+
+<footer id="footerpad text-center" style="background:rgb(252, 252, 252);">
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mx-auto" style="background:rgb(252, 252, 252);">
+                <p class="copyright text-muted text-center">© Augustus 2021 | Developed with&nbsp;<i style="color:black;" class="fa fa-heart"></i> <span style="visibility:hidden;">by Trideep Barik </span></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+
+    <script src="https://use.fontawesome.com/b4564248e6.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
