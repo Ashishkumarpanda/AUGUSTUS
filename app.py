@@ -20,7 +20,6 @@ def homeform():
       shortness_of_breath = request.form['shortness_of_breath']
       head_ache = request.form['headache']
       test_indication = request.form['test_indication']
-      print(fname,cough,fever,sore_throat,shortness_of_breath,headache,test_indication)
       prediction = model.predict([[cough,fever,sore_throat,shortness_of_breath,head_ache,test_indication]])
       result=""
       if prediction.all() == 0:
