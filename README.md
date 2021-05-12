@@ -28,3 +28,7 @@ and get themselves cured.
 
 # Process Flow
 USER INPUTS --------> MACHINE LEARNING MODEL ----------> PREDICTION --------> GUIDLINES TO THE USER
+
+### You can check the deployed web-app here
+
+<a href="augustus-webapp.herokuapp.com">AUGUSTUS</a>
