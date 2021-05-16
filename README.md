@@ -30,5 +30,4 @@ and get themselves cured.
 USER INPUTS --------> MACHINE LEARNING MODEL ----------> PREDICTION --------> GUIDLINES TO THE USER
 
 ### You can check the deployed web-app here
-
-<a href="augustus-webapp.herokuapp.com">AUGUSTUS</a>
+<a href="https://augustus-webapp.herokuapp.com/" target="_blank">AUGUSTUS</a>
